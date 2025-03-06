@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(7, 0, 0);
+            text-align: center;
+            padding: 5px;
+            
+        }
+        
+        h1 {
+            color: #b70c37;
+            font-family:'Times New Roman';
+        }
+        h2 {
+            color: #df2654;
+            font-family:'Times New Roman';
+        }
+        h3 {
+            color: #ef0f47;
+            font-family:'Times New Roman';
+        }
+        p {
+            font-size: 17px;
+            font-weight: bold; 
+            color: #bb5366;
+            font-family: 'Garamond'; 
+        }
+    
+    
+        a {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #9e0c0c;
+            font-family:'Times New Roman';
+        }
+        a:hover {
+            color: #f6faff; 
+        }
+        .container {
+            background: url('hd.jpg');
+            padding: 86px;
+            border-radius: 0px;
+            max-width: 134px;
+            margin: 0px;
+            float: right;
+            
+        }
+        .container1 {
+            background: url('hd.jpg');
+            padding: 9px;
+            width: 77.3%; /* Full width */
+            position: absolute; /* Moves with the page */
+            bottom:0.1em; /* Sticks to bottom */
+            color: #e06c79;
+            
+        }
+        .container2 {
+            position: absolute;
+            top: 20%; /* Adjust to place it correctly */
+            left: 40%;
+            transform: translateX(-50%);
+            width: 60%; /* Adjust width */
+            text-align: left;
+            font-family: 'Times New Roman';
+            color: #e06c79;
+        }
+       
+        .profile-container {
+            position: absolute;
+            top: 25%; /* Adjust as needed */
+            left: 60%; /* Adjust as needed */
+            width: 150px; /* Adjust as needed */
+            height: 180px; /* Make it a perfect circle */
+            border-radius: 50%; /* Ensures circular shape */
+            overflow: hidden; /* Hides overflow */
+            border: 3px solid rgb(71, 1, 1); /* Outer border */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);;
+        }
+        
+        .profile-container img {
+            width: 100%;
+            height: 130%;
+            object-fit: cover; /* Ensures the image fills the circle properly */
+        }
+        
+    </style>
+</head>
+<body>
+    <nav style=" padding: 10px; position: fixed; width: 80%; top: 0; left: 0;">
+        <ul style="list-style: none; display: flex; justify-content: center; gap: 20px;">
+            <li ><a href="#about">About Me</a></li>
+            <li ><a href="#projects">Projects</a></li>
+            <li ><a href="#contact">Contact</a></li>
+        </ul>
+        <h2>GitHub Website</h2>
+        <a href="" target="_blank">Visit My GitHub</a>
+    </nav>
+<div class="container2">
+    <h1>My Portfolio</h1>
+    <section id="about"> 
+        <h2>About Me</h2>
+        <p>Hello! <br>  
+            My name is Fariha Zehra, and I am a student pursuing a BSCS degree at FUUAST. <br>  
+            I am passionate about Front-end Development and enjoy building creative and engaging websites.</p>
+            
+            
+    </section>
+</div>
+<div class="profile-container">
+    <img src="profile.png" alt="">
+</div>
+
+    <div class="container">
+        <section id="projects">
+            
+            <h1>Projects</h1>
+            <h2>Webpage</h2>
+            <p>Created first webpage.</p>
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website to highlight my work and achievements.</p>
+        </section>
+        <section>
+            <h2>My Qualification</h2>
+            <table border="2" style="width: 100%; float:center;font-size: 12px;  background-color: rgb(14, 6, 6);">
+                <tr>
+                    <th style="color: #e3cece; font-family:'Times New Roman';">Qualification</th>
+                    <th style="color:  #eee5e5; font-family:'Times New Roman';">Status</th>
+                </tr>
+                <tr>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">Matric</td>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">Completed</td>
+                </tr>
+                <tr>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">FSC</td>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">Completed</td>
+                </tr>
+                <tr>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">BSCS</td>
+                    <td style="color: #f58d8d;font-family: 'Poppins'; ">In Progress</td>
+                </tr>
+            </table>
+        </section>
+        
+    </div>
+    <div class="container1">
+        <section id="contact">
+            <h2 >Contact Me</h2>
+            <form>
+                
+                <input type="text" name="name" placeholder="Your Name" required style="width: 20%; padding: 5px; margin-top: 3px; "><br>
+                <input type="email" name="email" placeholder="Your Email" required style="width: 20%; padding: 5px; margin-top: 3px; "><br>
+                <textarea name="message" placeholder="Your Message" rows="4" required style="width: 20%; padding: 5px; margin-top: 3px;"></textarea><br>
+                <input type="submit" value="Send Message" style="padding: 3px; margin-top: 5px; color:#b30a34;">
+            </form>
+        </section>
+        <section id="video-section" style="display:flex; position: absolute; top: 20%; left: 65%; ">
+           
+            <video width="90%" controls autoplay loop muted style="border-radius: 1px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);">
+                <source src="new.mp4" type="video/mp4">
+            </video>
+        </section>
+    </div>
+
+</body>
+</html>
